@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MITSUKOSHIMOTORS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+header {
+    background:#000;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero {
+    height:80vh;
+    background:url("https://images.unsplash.com/featured/?motorcycle") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:48px;
+    background:rgba(0,0,0,.6);
+    padding:20px;
+}
+
+/* SECTION */
+section {
+    padding:40px;
+    text-align:center;
+}
+
+/* PRODUCTS */
+.products {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:#222;
+    padding:15px;
+}
+
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* FOOTER */
+footer {
+    background:#000;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MITSUKOSHIMOTORS</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Motorcycles</a>
+        <a href="#">Parts</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>ENGINE OF LIFE</h1>
+</div>
+
+<section>
+    <h2>Featured Models</h2>
+
+    <div class="products">
+        <div class="card">
+            <!-- <img src="https://images.unsplash.com/featured/?sportbike"> -->
+            <h3>SAMURAI 155</h3>
+            <p>Short description here</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/featured/?cruiser-motorcycle">
+            <h3>EZ 125</h3>
+            <p>Short description here</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/featured/?atv">
+            <h3>FALCON 180</h3>
+            <p>AFFORDABLE BIKES</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 MITSUKOSHIMOTORS | All Rights Reserved
+</footer>
+
+</body>
+</html>
